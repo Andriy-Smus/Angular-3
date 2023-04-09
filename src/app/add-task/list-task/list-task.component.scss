@@ -1,0 +1,97 @@
+table{
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: none;
+    margin: 0;
+    vertical-align:top;
+}
+thead, tr{
+    height: 50px;
+    border-top: 1px solid rgb(197, 197, 197);
+}
+
+th{
+    text-align: left;
+}
+
+.th-num{
+    padding-left: 2%;
+    width: 10%;
+}
+.th-task, .th-check, .th-edit, .th-delete{
+    width: 15%;
+}
+.th-done{
+    width: 30%;
+}
+td:nth-child(1){
+    padding-left: 2%;
+    font-weight: bold;
+}
+
+.checkbox{
+    width: 15px;
+    height: 15px;
+    background-color: rgb(231 230 230);
+    border: 1px solid rgb(200 200 200);
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.uil-check{
+    font-size: 16px;
+    display: none;
+}
+
+.bt-edit, .bt-delete, .bt-save{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.bt-edit{
+    background-color: rgb(247, 190, 2);
+    color: rgb(0, 0, 0);
+}
+.bt-edit:hover{
+    background-color: rgb(230, 176, 0);
+}
+.bt-edit:focus{
+    outline: none;
+    box-shadow: 0 0 1px 3px rgba(255, 199, 15, 0.664);
+}
+.bt-save{
+    background-color: rgb(21, 150, 75);
+    color: rgb(241, 241, 241);
+}
+.bt-save:hover{
+    background-color: rgb(20, 138, 69);
+}
+.bt-delete{
+    background-color: rgb(199, 23, 0);
+    color: rgb(247, 247, 247);
+}
+.bt-delete:hover{
+    background-color: rgb(167, 19, 0);
+}
+.bt-delete:disabled{
+    background-color: rgba(199, 23, 0, 0.712);
+}
+
+.change-task{
+    height: 25px;
+    width: 70%;
+}
+.change-task:focus{
+    outline: none;
+}
+
+tr:hover{
+    background-color: rgb(202, 202, 202);
+}
+.show{
+    display: block;
+}

@@ -1,0 +1,9 @@
+<h1>Plan your day!</h1>
+<h2>User: Ivan Ivanov. Count of Task {{ countTask }} </h2>
+<div class="box">
+    <input type="text" class="box--input-task" [(ngModel)]="addTask">
+    <input type="button" value="Add" class="box--bt-add" (click)="createTask()">
+</div>
+
+
+<app-list-task [taskArr]="taskData" (fromList)="getCountTask($event)"></app-list-task>
